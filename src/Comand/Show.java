@@ -28,6 +28,7 @@ public class Show extends Command {
             System.out.println("MinimalPoint: " + labWork.getMinimalPoint());
             System.out.println("Difficulty: " + labWork.getDifficulty());
             System.out.println("Author: " + labWork.getAuthor().getName() + "\n   eyes: " + labWork.getAuthor().getEyeColor() + "\n   hair: " + labWork.getAuthor().getHairColor() + "\n   location: " + labWork.getAuthor().getLocation().getName() + "\n   coordinates: " + labWork.getAuthor().getLocation().getX() + " " + labWork.getAuthor().getLocation().getY() + " " + labWork.getAuthor().getLocation().getZ() + " " + "\n   nationality: " + labWork.getAuthor().getNationality() + "\n   weight: " + labWork.getAuthor().getWeight() + "\n");*/
+            System.out.println("Выполнено успешно");
         }
     }
 

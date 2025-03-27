@@ -21,7 +21,7 @@ public class Info extends Command {
     public void execute() throws IllegalAccessException {
         Queue<LabWork> collection = getCollection();
         System.out.println("Тип коллекции: " + collection.getClass().getName());
-        System.out.println("Дата инициализации: " + (initializationDate != null ? initializationDate : "Неизвестно"));
+        //System.out.println("Дата инициализации: " + (collection.getinitializationDate != null ? initializationDate : "Неизвестно"));
         System.out.println("Количество элементов: " + getSize());
 
         System.out.println("Первый элемент (по приоритету):");

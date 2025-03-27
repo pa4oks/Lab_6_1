@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import static Comand.base.CollectionManager.priorityQueue;
 
-public class Count_greater_than_minimal_point extends Command {
-    public Count_greater_than_minimal_point() {
+public class CountGreaterThanMinimalPoint extends Command {
+    public CountGreaterThanMinimalPoint() {
         super("count_greater_than_minimal_point");
     }
     @Override
@@ -31,6 +31,7 @@ public class Count_greater_than_minimal_point extends Command {
         else {
             System.out.println(count);
         }
+        System.out.println("Выполнено успешно");
     }
 
     @Override

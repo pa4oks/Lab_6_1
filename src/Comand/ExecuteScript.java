@@ -7,12 +7,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Execute_script extends Command {
+public class ExecuteScript extends Command {
 
     private final CommandManager commandManager;
     private String fileName;
 
-    public Execute_script(CommandManager commandManager) {
+    public ExecuteScript(CommandManager commandManager) {
         super("execute_script");
         this.commandManager = commandManager;
     }
@@ -51,6 +51,7 @@ public class Execute_script extends Command {
         } catch (Exception e) {
             System.err.println("Ошибка при чтении или выполнении скрипта: " + e.getMessage());
         }
+        System.out.println("Выполнено успешно");
     }
 
     @Override

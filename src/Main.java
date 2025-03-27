@@ -45,8 +45,8 @@ public class Main {
             if (commandList.containsKey(commandName)) {
                 Command command = commandList.get(commandName);
 
-                if (command instanceof Execute_script) { // Используем instanceof для проверки типа
-                    Execute_script executeScriptCommand = (Execute_script) command; // Приводим к типу Execute_script
+                if (command instanceof ExecuteScript) { // Используем instanceof для проверки типа
+                    ExecuteScript executeScriptCommand = (ExecuteScript) command; // Приводим к типу Execute_script
                     if (argument != null) {
                         executeScriptCommand.setFileName(argument); // Устанавливаем имя файла
                     } else {

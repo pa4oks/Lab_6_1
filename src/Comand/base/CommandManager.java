@@ -14,17 +14,17 @@ public final class CommandManager {
         commandList.put("info", new Info());
         commandList.put("add", new Add());
         commandList.put("update_by_id", new Update_id());
-        commandList.put("remove_by_id", new Remove_by_id());
+        commandList.put("remove_by_id", new RemoveById());
         commandList.put("clear", new Clear());
         commandList.put("save", new Save(csvCollectionManager)); // Передаем CSVCollectionManager
-        commandList.put("execute_script", new Execute_script(this));
+        commandList.put("execute_script", new ExecuteScript(this));
         commandList.put("exit", new Exit());
-        commandList.put("remove_first", new Remove_first());
+        commandList.put("remove_first", new RemoveFirst());
         commandList.put("head", new Head());
-        commandList.put("remove_lower", new Remove_lower());
-        commandList.put("remove_any_by_author", new Remove_any_by_author());
-        commandList.put("count_greater_than_minimal_point", new Count_greater_than_minimal_point());
-        commandList.put("print_descending", new Print_descending());
+        commandList.put("remove_lower", new RemoveLower());
+        commandList.put("remove_any_by_author", new RemoveAnyByAuthor());
+        commandList.put("count_greater_than_minimal_point", new CountGreaterThanMinimalPoint());
+        commandList.put("print_descending", new PrintDescending());
     }
 
     public HashMap<String, Command> getCommandList() {

@@ -48,7 +48,7 @@ public class LabWork implements Comparable<LabWork> {
     }
 
     public void setName(String name) throws IllegalAccessException {
-        if (name == null || name.isBlank()) {
+        if (name == null) {
             throw new IllegalAccessException("name");
         } else {
             this.name = name;

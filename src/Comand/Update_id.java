@@ -15,7 +15,17 @@ public class Update_id extends Command implements ReaderCreator{
     public void execute() throws IllegalAccessException {
         System.out.println("Введите id: ");
         Scanner in = new Scanner(System.in);
-        long id = in.nextLong();
+        long id;
+        while (true) {
+            System.out.println("Введите ID: ");
+            try {
+                String input = in.nextLine();
+                id = Long.parseLong(input);
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число long");
+            }
+        }
         boolean f = false;
         Iterator<LabWork> iterator = priorityQueue.iterator();
         while (iterator.hasNext()) {
@@ -27,9 +37,19 @@ public class Update_id extends Command implements ReaderCreator{
                 System.out.println("Введите имя: ");
                 //while...
                 lb.setName(in.nextLine());
-                lb.setCoordinates(CoordinateReaderCreator());
-                System.out.println("Введите Минимальный Пойнт: ");
-                lb.setMinimalPoint(Double.parseDouble(in.nextLine()));
+                lb.setCoordinates(coordinateReaderCreator());
+                double minpoint;
+                while (true) {
+                    System.out.println("Введите Минимальный Пойнт: ");
+                    try {
+                        String input = in.nextLine();
+                        minpoint = Float.parseFloat(input);
+                        break;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число double");
+                    }
+                }
+                lb.setMinimalPoint(minpoint);
                 Difficulty selectedDifficulty = null;
                 while (selectedDifficulty == null) {
                     System.out.println("Введите сложность: ");
@@ -43,7 +63,7 @@ public class Update_id extends Command implements ReaderCreator{
                         System.out.println("Ошибка: Некорректный ввод сложности. Пожалуйста, введите еще раз");
                     }
                 }
-                lb.setAuthor(PersonReaderCreator());
+                lb.setAuthor(personReaderCreator());
                 break;
             }
             /*try {
@@ -53,6 +73,7 @@ public class Update_id extends Command implements ReaderCreator{
             }*/
         }
         //update_id(Long.parseLong(in.nextLine()));
+        System.out.println("Выполнено успешно");
     }
 
     @Override

@@ -21,6 +21,7 @@ public class Head extends Command {
         } else {
             System.out.println("Очередь пуста.");
         }
+        System.out.println("Выполнено успешно");
     }
 
     @Override

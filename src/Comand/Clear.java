@@ -11,6 +11,7 @@ public class Clear extends Command {
     @Override
     public void execute() throws IllegalAccessException {
         priorityQueue.clear();
+        System.out.println("Выполнено успешно");
     }
 
     @Override

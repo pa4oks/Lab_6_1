@@ -9,14 +9,14 @@ import java.util.Iterator;
 
 import static Comand.base.CollectionManager.priorityQueue;
 
-public class Remove_any_by_author extends Command implements ReaderCreator {
-    public Remove_any_by_author() {
+public class RemoveAnyByAuthor extends Command implements ReaderCreator {
+    public RemoveAnyByAuthor() {
         super("remove_any_by_author");
     }
     @Override
     public void execute() throws IllegalAccessException {
         System.out.println("Введите автора");
-        Person author = PersonReaderCreator();
+        Person author = personReaderCreator();
         Iterator<LabWork> iterator = priorityQueue.iterator();
         //priorityQueue.removeIf(labWork -> labWork.getAuthor() == author);
         boolean removed = false;
@@ -27,6 +27,7 @@ public class Remove_any_by_author extends Command implements ReaderCreator {
                 removed = true;
             }
         }
+        System.out.println("Выполнено успешно");
     }
 
     @Override

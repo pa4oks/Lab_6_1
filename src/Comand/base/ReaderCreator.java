@@ -1,5 +1,4 @@
 package Comand.base;
-import Comand.base.*;
 import Model.*;
 
 import java.util.Scanner;
@@ -10,7 +9,7 @@ public interface ReaderCreator {
         return
     }*/
 
-    public default Person PersonReaderCreator() throws IllegalAccessException {
+    public default Person personReaderCreator() throws IllegalAccessException {
         Scanner in = new Scanner(System.in);
         Person personNew = new Person();
         System.out.println("Введите информацию о человеке: ");
@@ -78,32 +77,80 @@ public interface ReaderCreator {
         personNew.setNationality(selectedCountry);
 
         System.out.println("Введите местоположение: ");
-        personNew.setLocation(LocationReaderCreator());
+        personNew.setLocation(locationReaderCreator());
         return personNew;
     }
-    public default Location LocationReaderCreator() throws IllegalAccessException {
+    public default Location locationReaderCreator() throws IllegalAccessException {
         Scanner in = new Scanner(System.in);
         Location locationNew = new Location();
         System.out.println("Введите название места: ");
         locationNew.setName(in.nextLine());
-        System.out.println("Введите координаты местоположения:");
-        System.out.print("x = ");
-        locationNew.setX(Long.parseLong(in.nextLine()));
-        System.out.print("y = ");
-        locationNew.setY(Integer.parseInt(in.nextLine()));
-        System.out.print("z = ");
-        locationNew.setZ(Float.parseFloat(in.nextLine()));
+        long x;
+        while (true) {
+            System.out.print("x = ");
+            try {
+                String input = in.nextLine();
+                x = Long.parseLong(input);
+                break; // Выход из цикла, если ввод успешен
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число с плавающей точкой (например, 3.14).");
+            }
+        }
+        locationNew.setX(x);
+        int y;
+        while (true) {
+            System.out.print("y = ");
+            try {
+                String input = in.nextLine();
+                y = Integer.parseInt(input);
+                break; // Выход из цикла, если ввод успешен
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число с плавающей точкой (например, 3.14).");
+            }
+        }
+        locationNew.setY(y);
+        float z;
+        while (true) {
+            System.out.print("z = ");
+            try {
+                String input = in.nextLine();
+                z = Float.parseFloat(input);
+                break; // Выход из цикла, если ввод успешен
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число с плавающей точкой (например, 3.14).");
+            }
+        }
+        locationNew.setZ(z);
         return locationNew;
     }
-    public default Coordinates CoordinateReaderCreator() throws IllegalAccessException {
+    public default Coordinates coordinateReaderCreator() throws IllegalAccessException {
         Scanner in = new Scanner(System.in);
         Coordinates coordinatesNew = new Coordinates();
-
         System.out.println("Введите координаты местоположения:");
-        System.out.print("x = ");
-        coordinatesNew.setX(Float.parseFloat(in.nextLine()));
-        System.out.print("y = ");
-        coordinatesNew.setY(Float.parseFloat(in.nextLine()));
+        float x;
+        while (true) {
+            System.out.print("x = ");
+            try {
+                String input = in.nextLine();
+                x = Float.parseFloat(input);
+                break; // Выход из цикла, если ввод успешен
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число с плавающей точкой (например, 3.14).");
+            }
+        }
+        coordinatesNew.setX(x);
+        float y;
+        while (true) {
+            System.out.print("y = ");
+            try {
+                String input = in.nextLine();
+                y = Float.parseFloat(input);
+                break; // Выход из цикла, если ввод успешен
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число с плавающей точкой (например, 3.14).");
+            }
+        }
+        coordinatesNew.setY(y);
         return coordinatesNew;
     }
 }

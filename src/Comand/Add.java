@@ -4,11 +4,9 @@ import Comand.base.Command;
 import Comand.base.ReaderCreator;
 import Model.*;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 import static Comand.base.CollectionManager.add;
-import static Comand.base.CollectionManager.priorityQueue;
 
 public class Add extends Command implements ReaderCreator {
     public Add() {
@@ -21,9 +19,20 @@ public class Add extends Command implements ReaderCreator {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите имя: ");
         labworkNew.setName(in.nextLine());
-        labworkNew.setCoordinates(CoordinateReaderCreator());
-        System.out.println("Введите Минимальный Пойнт: ");
-        labworkNew.setMinimalPoint(Double.parseDouble(in.nextLine()));
+        labworkNew.setCoordinates(coordinateReaderCreator());
+
+        double minpoint;
+        while (true) {
+            System.out.println("Введите Минимальный Пойнт: ");
+            try {
+                String input = in.nextLine();
+                minpoint = Float.parseFloat(input);
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Некорректный формат числа. Пожалуйста, введите число double");
+            }
+        }
+        labworkNew.setMinimalPoint(minpoint);
         Difficulty selectedDifficulty = null;
         while (selectedDifficulty == null) {
             System.out.println("Введите сложность: ");
@@ -39,9 +48,10 @@ public class Add extends Command implements ReaderCreator {
         }
 
         labworkNew.setDifficulty(selectedDifficulty);
-        labworkNew.setAuthor(PersonReaderCreator());
+        labworkNew.setAuthor(personReaderCreator());
 
         add(labworkNew);
+        System.out.println("Выполнено успешно");
     }
 
     @Override

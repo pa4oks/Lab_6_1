@@ -4,13 +4,14 @@ import Comand.base.Command;
 
 import static Comand.base.CollectionManager.priorityQueue;
 
-public class Remove_first extends Command {
-    public Remove_first() {
+public class RemoveFirst extends Command {
+    public RemoveFirst() {
         super("remove first");
     }
     @Override
     public void execute() throws IllegalAccessException {
         priorityQueue.poll();
+        System.out.println("Выполнено успешно");
     }
 
     @Override

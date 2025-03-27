@@ -7,8 +7,8 @@ import java.util.*;
 
 import static Comand.base.CollectionManager.priorityQueue;
 
-public class Print_descending extends Command {
-    public Print_descending() {
+public class PrintDescending extends Command {
+    public PrintDescending() {
         super("print_descending");
     }
     @Override
@@ -28,6 +28,7 @@ public class Print_descending extends Command {
             labWork.ShowLabWork(labWork);
             System.out.println();
         }
+        System.out.println("Выполнено успешно");
     }
 
     @Override
