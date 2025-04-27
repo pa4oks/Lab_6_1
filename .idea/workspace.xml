@@ -10,34 +10,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cfda431-274b-46ae-82f3-f4b5fdd8fe2a" name="Changes" comment="git commit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_5-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Comand/RemoveById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Comand/RemoveLower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Count_greater_than_minimal_point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/CountGreaterThanMinimalPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Execute_script.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/ExecuteScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Print_descending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/PrintDescending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Remove_any_by_author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/RemoveAnyByAuthor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Remove_by_id.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Remove_first.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/RemoveFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Remove_lower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/Update_id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/Update_id.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/base/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/base/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comand/base/ReaderCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comand/base/ReaderCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/LabWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LabWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_5-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Add.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Clear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/CountGreaterThanMinimalPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/ExecuteScript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Head.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Help.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/PrintDescending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/RemoveAnyByAuthor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/RemoveById.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/RemoveFirst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/RemoveLower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Save.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/Update_id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/base/CollectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/base/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/base/CommandManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comand/base/ReaderCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Difficulty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/LabWork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/CSVCollectionManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +71,12 @@
     &quot;assignee&quot;: &quot;pa4oks&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/pa4oks/Laba-5.git",
-    "accountId": "a396ddbd-ea5e-4788-a600-848beef9477f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pa4oks/Laba-5.git&quot;,
+    &quot;accountId&quot;: &quot;a396ddbd-ea5e-4788-a600-848beef9477f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -84,34 +89,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.Lab_5-master [clean].executor": "Run",
-    "Maven.Lab_5-master [package].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/olgar/Downloads/Lab_5-master (1)/Lab_5-master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/olgar/Downloads/Lab_5-master (1)/Lab_5-master/untitled/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab_5-master [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab_5-master [package].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/olgar/Downloads/Lab_5-master (1)/Lab_5-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/olgar/Downloads/Lab_5-master (1)/Lab_5-master/untitled/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -143,7 +148,11 @@
       <workItem from="1741547803932" duration="3018000" />
       <workItem from="1741863821668" duration="20774000" />
       <workItem from="1742206569719" duration="5508000" />
-      <workItem from="1742992052111" duration="4610000" />
+      <workItem from="1742992052111" duration="5761000" />
+      <workItem from="1743105283019" duration="1489000" />
+      <workItem from="1743423296283" duration="2725000" />
+      <workItem from="1744560439368" duration="951000" />
+      <workItem from="1745746419216" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="bupe">
       <option name="closed" value="true" />
@@ -209,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742992109584</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="git commit">
+      <option name="closed" value="true" />
+      <created>1743104268414</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743104268414</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
