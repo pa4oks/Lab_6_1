@@ -1,6 +1,7 @@
-package Model;
+package org.example.manager.recources;
 
 import com.google.gson.annotations.SerializedName;
+import org.example.recources.Country;
 
 public class Person {
     @SerializedName("name")

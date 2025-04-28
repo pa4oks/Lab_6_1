@@ -1,8 +1,9 @@
-package Model;
+package org.example.manager.deserializer;
 
 import com.google.gson.annotations.SerializedName;
+import org.example.recources.Country;
 
-public class Person {
+public class PersonDeserializer {
     @SerializedName("name")
     private String name; //Поле не может быть null, Строка не может быть пустой
     @SerializedName("weight")

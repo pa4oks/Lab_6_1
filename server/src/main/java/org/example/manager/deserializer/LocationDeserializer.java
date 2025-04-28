@@ -1,8 +1,8 @@
-package Model;
+package org.example.manager.deserializer;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Location {
+public class LocationDeserializer {
     @SerializedName("x")
     private long x;
     @SerializedName("y")

@@ -1,8 +1,8 @@
-package Model;
+package org.example.manager.deserializer;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Coordinates {
+public class CoordinatesDeserializer {
     @SerializedName("x")
     private float x=0; //Значение поля должно быть больше -204
     @SerializedName("y")

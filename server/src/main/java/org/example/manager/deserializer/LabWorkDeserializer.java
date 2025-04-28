@@ -1,16 +1,19 @@
-package Model;
+package org.example.manager.deserializer;
 //import static Comand.base.CollectionManager.priorityQueue;
 
 import com.google.gson.annotations.SerializedName;
+import org.example.recources.Coordinates;
+import org.example.recources.Difficulty;
+import org.example.recources.Person;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-public class LabWork implements Comparable<LabWork> {
+public class LabWorkDeserializer implements Comparable<LabWorkDeserializer> {
     @Override
-    public int compareTo(LabWork other) {
+    public int compareTo(LabWorkDeserializer other) {
         return this.getName().compareTo(other.getName());
     }
     @SerializedName("id")
@@ -35,19 +38,19 @@ public class LabWork implements Comparable<LabWork> {
         return coordinates.getX() + "_" + coordinates.getY();
     }
 
-    public LabWork() {
+    public LabWorkDeserializer() {
         this.id = generateUniqueLongId();
         this.creationDate = new Date();
     }
 
-    public void ShowLabWork(LabWork labWork) {
-        System.out.println("Name: " + labWork.getName());
-        System.out.println("ID: " + labWork.getId());
-        System.out.println("Coordinates: " + labWork.getCoordinates().getX() + " " + labWork.getCoordinates().getY());
-        System.out.println("CreationDate: " + labWork.getCreationDate());
-        System.out.println("MinimalPoint: " + labWork.getMinimalPoint());
-        System.out.println("Difficulty: " + labWork.getDifficulty());
-        System.out.println("Author: " + labWork.getAuthor().getName() + "\n   eyes: " + labWork.getAuthor().getEyeColor() + "\n   hair: " + labWork.getAuthor().getHairColor() + "\n   location: " + labWork.getAuthor().getLocation().getName() + "\n   coordinates: " + labWork.getAuthor().getLocation().getX() + " " + labWork.getAuthor().getLocation().getY() + " " + labWork.getAuthor().getLocation().getZ() + " " + "\n   nationality: " + labWork.getAuthor().getNationality() + "\n   weight: " + labWork.getAuthor().getWeight());
+    public void ShowLabWork(LabWorkDeserializer labWorkDeserializer) {
+        System.out.println("Name: " + labWorkDeserializer.getName());
+        System.out.println("ID: " + labWorkDeserializer.getId());
+        System.out.println("Coordinates: " + labWorkDeserializer.getCoordinates().getX() + " " + labWorkDeserializer.getCoordinates().getY());
+        System.out.println("CreationDate: " + labWorkDeserializer.getCreationDate());
+        System.out.println("MinimalPoint: " + labWorkDeserializer.getMinimalPoint());
+        System.out.println("Difficulty: " + labWorkDeserializer.getDifficulty());
+        System.out.println("Author: " + labWorkDeserializer.getAuthor().getName() + "\n   eyes: " + labWorkDeserializer.getAuthor().getEyeColor() + "\n   hair: " + labWorkDeserializer.getAuthor().getHairColor() + "\n   location: " + labWorkDeserializer.getAuthor().getLocation().getName() + "\n   coordinates: " + labWorkDeserializer.getAuthor().getLocation().getX() + " " + labWorkDeserializer.getAuthor().getLocation().getY() + " " + labWorkDeserializer.getAuthor().getLocation().getZ() + " " + "\n   nationality: " + labWorkDeserializer.getAuthor().getNationality() + "\n   weight: " + labWorkDeserializer.getAuthor().getWeight());
     }
 
     public long getId() {
@@ -130,14 +133,14 @@ public class LabWork implements Comparable<LabWork> {
     }
 
     //}
-    public static LabWork ReadLabWork(String string) throws IllegalAccessException {
+    public static LabWorkDeserializer ReadLabWork(String string) throws IllegalAccessException {
         String[] readings = string.split(" ");
         //как задать через строку, если есть Person??
-        LabWork newLabWork = null;
-        newLabWork.generateUniqueLongId();
+        LabWorkDeserializer newLabWorkDeserializer = null;
+        newLabWorkDeserializer.generateUniqueLongId();
 
 
-        return newLabWork;
+        return newLabWorkDeserializer;
     }
 
     static List<Integer> idList = new ArrayList<>();

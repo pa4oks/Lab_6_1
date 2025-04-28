@@ -1,7 +1,10 @@
-package Model;
+package org.example.manager.recources;
 //import static Comand.base.CollectionManager.priorityQueue;
 
 import com.google.gson.annotations.SerializedName;
+import org.example.recources.Coordinates;
+import org.example.recources.Difficulty;
+import org.example.recources.Person;
 
 import java.util.ArrayList;
 import java.util.Date;
