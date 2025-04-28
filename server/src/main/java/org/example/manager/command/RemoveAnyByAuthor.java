@@ -1,13 +1,14 @@
 package org.example.manager.command;
 
-import Comand.base.Command;
-import Comand.base.ReaderCreator;
-import Model.LabWork;
-import Model.Person;
-
 import java.util.Iterator;
 
-import static Comand.base.CollectionManager.priorityQueue;
+import org.example.manager.recources.*;
+import org.example.manager.serializer.*;
+import org.example.manager.command.*;
+import org.example.manager.deserializer.*;
+import org.example.manager.system.*;
+
+import static org.example.manager.serializer.CollectionManager.priorityQueue;
 
 public class RemoveAnyByAuthor extends Command implements ReaderCreator {
     public RemoveAnyByAuthor() {

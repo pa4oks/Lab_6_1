@@ -1,7 +1,14 @@
 package org.example.manager.command;
 
-import Comand.base.Command;
-import Comand.base.CommandManager;
+import org.example.manager.recources.*;
+import org.example.manager.serializer.*;
+import org.example.manager.command.*;
+import org.example.manager.deserializer.*;
+import org.example.manager.system.*;
+
+import java.util.Scanner;
+
+import static org.example.manager.serializer.CollectionManager.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;

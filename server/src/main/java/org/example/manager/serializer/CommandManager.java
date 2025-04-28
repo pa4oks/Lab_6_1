@@ -1,7 +1,9 @@
 package org.example.manager.serializer;
 
-import Comand.*;
-import files.CSVCollectionManager;
+
+import org.example.manager.command.Command;
+import org.example.manager.command.*;
+
 
 import java.util.HashMap;
 

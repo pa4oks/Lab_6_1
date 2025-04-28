@@ -1,34 +1,27 @@
 package org.example.manager.deserializer;
 
-import com.google.gson.annotations.SerializedName;
+import com.google.gson.*;
+import org.example.manager.recources.*;
 
-public class CoordinatesDeserializer {
-    @SerializedName("x")
-    private float x=0; //Значение поля должно быть больше -204
-    @SerializedName("y")
-    private float y=0;
+import java.lang.reflect.Type;
 
-    public float getX() {
-        return x;
-    }
+public class CoordinatesDeserializer implements JsonDeserializer<Coordinates> {
+    @Override
+    public Coordinates deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException
+    {
+        JsonObject jsonObject = json.getAsJsonObject();
 
-    public void setX(float x) throws IllegalAccessException{
-        if (x<=-204) {
-            throw new IllegalAccessException("name");
+        Coordinates coordinates = new Coordinates();
+        if (jsonObject.has("coordinatesX") && !jsonObject.get("coordinatesX").isJsonNull()) {
+            try {
+                coordinates.setX(jsonObject.get("coordinatesX").getAsFloat());
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
         }
-        else{
-            this.x = x;
+        if (jsonObject.has("coordinatesY") && !jsonObject.get("coordinatesY").isJsonNull()) {
+            coordinates.setY(jsonObject.get("coordinatesY").getAsLong());
         }
-    }
-
-    public float getY() {
-        return y;
-    }
-
-    public void setY(float y) {
-        this.y = y;
-    }
-    public String getLocation() {
-        return x + "_" + y;
+        return coordinates;
     }
 }

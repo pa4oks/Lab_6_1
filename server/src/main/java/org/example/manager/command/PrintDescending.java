@@ -1,11 +1,14 @@
 package org.example.manager.command;
 
-import Comand.base.Command;
-import Model.LabWork;
-
 import java.util.*;
 
-import static Comand.base.CollectionManager.priorityQueue;
+import org.example.manager.recources.*;
+import org.example.manager.serializer.*;
+import org.example.manager.command.*;
+import org.example.manager.deserializer.*;
+import org.example.manager.system.*;
+
+import static org.example.manager.serializer.CollectionManager.priorityQueue;
 
 public class PrintDescending extends Command {
     public PrintDescending() {

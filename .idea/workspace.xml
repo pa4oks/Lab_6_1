@@ -10,63 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cfda431-274b-46ae-82f3-f4b5fdd8fe2a" name="Changes" comment="git commit">
-      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Difficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/LabWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/system/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/system/ExecuteScript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Clear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/CountGreaterThanMinimalPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/ExecuteScript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Head.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Help.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/PrintDescending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/ReaderCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveAnyByAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveFirst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveLower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Save.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Show.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Update_id.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/ColorDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/CoordinatesDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/CountryDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/DifficultyDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/LabWorkDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/LocationDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/PersonDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Difficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/LabWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CSVCollectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CollectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/ServerEnvironment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/system/MainServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/LabWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/LabWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/recources/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/example/system/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/example/system/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/CountGreaterThanMinimalPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/CountGreaterThanMinimalPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Head.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/PrintDescending.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/PrintDescending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/ReaderCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/ReaderCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveAnyByAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveAnyByAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/RemoveLower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Update_id.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/command/Update_id.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/ColorDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/ColorDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/CoordinatesDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/CoordinatesDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/CountryDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/CountryDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/DifficultyDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/DifficultyDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/LabWorkDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/LabWorkDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/LocationDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/LocationDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/PersonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/deserializer/PersonDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Difficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/LabWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/LabWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/recources/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/manager/serializer/CommandManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +172,7 @@
       <workItem from="1745746419216" duration="1517000" />
       <workItem from="1745789110706" duration="334000" />
       <workItem from="1745789465628" duration="2335000" />
-      <workItem from="1745830989498" duration="3938000" />
+      <workItem from="1745830989498" duration="10524000" />
     </task>
     <task id="LOCAL-00001" summary="bupe">
       <option name="closed" value="true" />
@@ -274,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745747394506</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="git commit">
+      <option name="closed" value="true" />
+      <created>1745838755591</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745838755591</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

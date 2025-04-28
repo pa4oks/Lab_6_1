@@ -1,5 +1,5 @@
 package org.example.manager.recources;
-
+import org.example.manager.recources.*;
 public enum Difficulty {
     EASY,
     NORMAL,

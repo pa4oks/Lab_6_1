@@ -1,8 +1,10 @@
 package org.example.manager.command;
 
-import Comand.base.Command;
-import Comand.base.CollectionManager;
-import files.CSVCollectionManager;
+import org.example.manager.recources.*;
+import org.example.manager.serializer.*;
+import org.example.manager.command.*;
+import org.example.manager.deserializer.*;
+import org.example.manager.system.*;
 
 public class Save extends Command {
 

@@ -1,9 +1,14 @@
 package org.example.manager.deserializer;
 
+import com.google.gson.*;
+import org.example.manager.recources.LabWork;
+import org.example.manager.recources.*;
+import com.google.gson.*;
 import com.google.gson.annotations.SerializedName;
-import org.example.recources.Country;
 
-public class PersonDeserializer {
+import java.lang.reflect.Type;
+
+public class PersonDeserializer implements JsonDeserializer<Person> {
     @SerializedName("name")
     private String name; //Поле не может быть null, Строка не может быть пустой
     @SerializedName("weight")
@@ -17,63 +22,40 @@ public class PersonDeserializer {
     @SerializedName("location")
     private Location location; //Поле может быть null
 
+    @Override
+    public Person deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
 
+        JsonObject jsonObject = json.getAsJsonObject();
 
-    public String getName() {
-        return name;
-    }
+        Person person = new Person();
 
-    public void setName(String name) throws IllegalAccessException {
-        if (name==null) {
-            throw new IllegalAccessException("name");
+        if (jsonObject.has("name") && !jsonObject.get("name").isJsonNull()) {
+            try {
+                person.setName(jsonObject.get("name").getAsString());
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
         }
-        else{
-            this.name = name;
+        if (jsonObject.has("weight") && !jsonObject.get("weight").isJsonNull()) {
+            try {
+                person.setWeight(jsonObject.get("weight").getAsInt());
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
         }
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) throws IllegalAccessException {
-        if (weight<0) {
-            throw new IllegalAccessException("name");
+        if (jsonObject.has("eyeColor") && !jsonObject.get("eyeColor").isJsonNull()) {
+            person.setEyeColor((Color) context.deserialize(jsonObject.get("eyeColor"), Color.class));
         }
-        else{
-            this.weight = weight;
+        if (jsonObject.has("hairColor") && !jsonObject.get("hairColor").isJsonNull()) {
+            person.setHairColor((Color) context.deserialize(jsonObject.get("hairColor"), Color.class));
         }
-    }
-
-    public Color getEyeColor() {
-        return eyeColor;
-    }
-
-    public void setEyeColor(Color eyeColor) {
-        this.eyeColor = eyeColor;
-    }
-
-    public Color getHairColor() {
-        return hairColor;
-    }
-
-    public void setHairColor(Color hairColor) {
-        this.hairColor = hairColor;
-    }
-
-    public Country getNationality() {
-        return nationality;
-    }
-
-    public void setNationality(Country nationality) {
-        this.nationality = nationality;
-    }
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
+        if (jsonObject.has("nationality") && !jsonObject.get("nationality").isJsonNull()) {
+            person.setNationality((Country) context.deserialize(jsonObject.get("nationality"), Country.class));
+        }
+        if (jsonObject.has("location") && !jsonObject.get("location").isJsonNull()) {
+            person.setLocation((Location) context.deserialize(jsonObject.get("location"), Location.class));
+        }
+        return person;
     }
 }
+

@@ -1,12 +1,13 @@
 package org.example.manager.command;
 
 
-import Comand.base.ReaderCreator;
-import Model.*;
+
+import org.example.manager.recources.*;
 
 import java.util.Scanner;
 
-import static Comand.base.CollectionManager.add;
+import static org.example.manager.serializer.CollectionManager.*;
+import static org.example.manager.serializer.CommandManager.commandList;
 
 public class Add extends Command implements ReaderCreator {
     public Add() {

@@ -1,7 +1,7 @@
 package org.example.manager.recources;
 
 import com.google.gson.annotations.SerializedName;
-import org.example.recources.Country;
+import org.example.manager.recources.*;
 
 public class Person {
     @SerializedName("name")
@@ -38,7 +38,7 @@ public class Person {
 
     public void setWeight(int weight) throws IllegalAccessException {
         if (weight<0) {
-            throw new IllegalAccessException("name");
+            throw new IllegalAccessException("weight");
         }
         else{
             this.weight = weight;

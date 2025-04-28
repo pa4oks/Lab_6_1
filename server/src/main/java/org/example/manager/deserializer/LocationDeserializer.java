@@ -1,8 +1,13 @@
 package org.example.manager.deserializer;
-
+import com.google.gson.*;
+import org.example.manager.recources.LabWork;
+import org.example.manager.recources.*;
+import com.google.gson.*;
 import com.google.gson.annotations.SerializedName;
 
-public class LocationDeserializer {
+import java.lang.reflect.Type;
+
+public class LocationDeserializer implements JsonDeserializer<Location> {
     @SerializedName("x")
     private long x;
     @SerializedName("y")
@@ -12,41 +17,24 @@ public class LocationDeserializer {
     @SerializedName("name")
     private String name; //Поле не может быть null
 
-    /*public Location(Integer y, Float z, String name) {
-        this.y = y;
-        this.z = z;
-        this.name = name;
-    }*/
+    @Override
+    public Location deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException
+    {
+        JsonObject jsonObject = json.getAsJsonObject();
 
-    public long getX() {
-        return x;
-    }
-
-    public void setX(long x) {
-        this.x = x;
-    }
-
-    public Integer getY() {
-        return y;
-    }
-
-    public void setY(Integer y) {
-        this.y = y;
-    }
-
-    public Float getZ() {
-        return z;
-    }
-
-    public void setZ(Float z) {
-        this.z = z;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        Location location = new Location();
+        if (jsonObject.has("name") && !jsonObject.get("name").isJsonNull()) {
+            location.setName(jsonObject.get("name").getAsString());
+        }
+        if (jsonObject.has("x") && !jsonObject.get("x").isJsonNull()) {
+            location.setX(jsonObject.get("x").getAsLong());
+        }
+        if (jsonObject.has("y") && !jsonObject.get("y").isJsonNull()) {
+            location.setY(jsonObject.get("y").getAsInt());
+        }
+        if (jsonObject.has("z") && !jsonObject.get("z").isJsonNull()) {
+            location.setZ(jsonObject.get("z").getAsFloat());
+        }
+        return location;
     }
 }

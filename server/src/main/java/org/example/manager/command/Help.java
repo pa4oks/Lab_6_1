@@ -1,10 +1,10 @@
 package org.example.manager.command;
-import Comand.base.*;
-import Comand.base.Command;
+
 
 import java.util.HashMap;
 
-import static Comand.base.CommandManager.commandList;
+
+import static org.example.manager.serializer.CommandManager.commandList;
 
 public class Help extends Command {
     public Help() {
@@ -27,3 +27,4 @@ public class Help extends Command {
         stringCommandHashMap.put(help.getName(), help);
     }*/
 }
+

@@ -1,6 +1,7 @@
 package org.example.manager.recources;
 
 import com.google.gson.annotations.SerializedName;
+import org.example.manager.recources.*;
 
 public class Coordinates {
     @SerializedName("x")

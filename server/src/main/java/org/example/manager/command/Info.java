@@ -1,14 +1,16 @@
 package org.example.manager.command;
 
 
-import Comand.base.Command;
-import Comand.base.CommandManager;
-import Model.LabWork;
+import org.example.manager.recources.*;
+import org.example.manager.serializer.*;
+import org.example.manager.command.*;
+import org.example.manager.deserializer.*;
+import org.example.manager.system.*;
 
 import java.time.LocalDateTime;
 import java.util.Queue;
 
-import static Comand.base.CollectionManager.*;
+import static org.example.manager.serializer.CollectionManager.*;
 
 
 public class Info extends Command {

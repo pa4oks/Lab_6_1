@@ -1,12 +1,13 @@
 package org.example.manager.command;
 
-import Comand.base.Command;
-import Model.LabWork;
-
 import java.util.Iterator;
 import java.util.Scanner;
 
-import static Comand.base.CollectionManager.priorityQueue;
+import org.example.manager.recources.*;
+
+import java.util.Scanner;
+
+import static org.example.manager.serializer.CollectionManager.*;
 
 public class CountGreaterThanMinimalPoint extends Command {
     public CountGreaterThanMinimalPoint() {
